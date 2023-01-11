@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopify_app/main_creen/home_screen.dart';
 
 class CustomerScreen extends StatefulWidget {
   const CustomerScreen({super.key});
@@ -9,11 +10,20 @@ class CustomerScreen extends StatefulWidget {
 
 class _CustomerScreenState extends State<CustomerScreen> {
   int _selectedIndex = 0;
+  final List<Widget> _tabs = [
+    const HomeSareen(),
+    const Center(child: Text('Home screen')),
+    const Center(child: Text('Category screen')),
+    const Center(child: Text('Stores screen')),
+    const Center(child: Text('Cart screen')),
+    const Center(child: Text('Profile screen')),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // ignore: prefer_const_literals_to_create_immutables
+      body: _tabs[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         elevation: 0.0,
         selectedLabelStyle: const TextStyle(fontWeight: FontWeight.w600),
         currentIndex: _selectedIndex,

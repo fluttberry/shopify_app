@@ -10,6 +10,8 @@ class ShopifyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: const CustomerScreen(),);
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: CustomerScreen(),);
   }
 }
