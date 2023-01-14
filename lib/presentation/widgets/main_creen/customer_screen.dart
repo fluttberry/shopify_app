@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shopify_app/main_creen/home_screen.dart';
+import 'package:shopify_app/presentation/widgets/main_creen/home_screen.dart';
 
 class CustomerScreen extends StatefulWidget {
   const CustomerScreen({super.key});
