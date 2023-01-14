@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shopify_app/presentation/minor%20screens/search_screen.dart';
+import 'package:shopify_app/app/constants/presentation/minor%20screens/search_screen.dart';
 
 class FakeSearchWidget extends StatelessWidget {
   const FakeSearchWidget({
@@ -27,7 +27,7 @@ class FakeSearchWidget extends StatelessWidget {
               // ignore: prefer_const_literals_to_create_immutables
               children: [
                 const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 5),
+                  padding: EdgeInsets.symmetric(horizontal: 0.1),
                   child: Icon(
                     Icons.search,
                     color: Colors.grey,
@@ -36,7 +36,7 @@ class FakeSearchWidget extends StatelessWidget {
                 // ignore: prefer_const_constructors
                 Text(
                   'What are you looking for?',
-                  style: const TextStyle(fontSize: 18, color: Colors.grey),
+                  style: const TextStyle(fontSize: 15, color: Colors.grey),
                 ),
               ],
             ),

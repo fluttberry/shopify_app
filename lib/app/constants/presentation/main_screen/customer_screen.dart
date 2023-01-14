@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shopify_app/presentation/widgets/main_creen/home_screen.dart';
+import 'package:shopify_app/app/constants/colors/app_colors.dart';
+import 'package:shopify_app/app/constants/presentation/main_screen/category_acreen.dart';
+import 'package:shopify_app/app/constants/presentation/main_screen/home_screen.dart';
 
 class CustomerScreen extends StatefulWidget {
   const CustomerScreen({super.key});
@@ -12,6 +14,7 @@ class _CustomerScreenState extends State<CustomerScreen> {
   int _selectedIndex = 0;
   final List<Widget> _tabs = [
     const HomeSareen(),
+    const CategoryScreen(),
     const Center(child: Text('Home screen')),
     const Center(child: Text('Category screen')),
     const Center(child: Text('Stores screen')),
@@ -27,8 +30,8 @@ class _CustomerScreenState extends State<CustomerScreen> {
         elevation: 0.0,
         selectedLabelStyle: const TextStyle(fontWeight: FontWeight.w600),
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.black,
-        unselectedItemColor: Colors.grey,
+        selectedItemColor: AppColors.black,
+        unselectedItemColor: AppColors.grey,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Category'),

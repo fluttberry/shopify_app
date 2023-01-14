@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shopify_app/presentation/widgets/main_creen/fake_search_widget.dart';
+import 'package:shopify_app/app/constants/colors/app_colors.dart';
+import 'package:shopify_app/app/constants/presentation/main_screen/fake_search_widget.dart';
 
 class HomeSareen extends StatefulWidget {
   const HomeSareen({super.key});
@@ -16,11 +17,11 @@ class _HomeSareenState extends State<HomeSareen> {
       child: Scaffold(
         appBar: AppBar(
           elevation: 0.0,
-          backgroundColor: Colors.white,
+          backgroundColor: AppColors.white,
           title: const FakeSearchWidget(),
           // ignore: prefer_const_constructors
           bottom: TabBar(
-              indicatorColor: Colors.yellow,
+              indicatorColor: AppColors.yellow,
               indicatorWeight: 8,
               isScrollable: true,
               // ignore: prefer_const_literals_to_create_immutables
