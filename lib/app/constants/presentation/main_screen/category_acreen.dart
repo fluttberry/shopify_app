@@ -49,12 +49,15 @@ class _CategoryScreenState extends State<CategoryScreen> {
           return GestureDetector(
             onTap: () {
               for (var element in items) {
-                
+                element.isSelected = false;
               }
               setState(() {
                 items[index].isSelected = true;
               });
-              _pageController.jumpToPage(index);
+              // _pageController.jumpToPage(index);
+              _pageController.animateToPage(index,
+                  duration: const Duration(seconds: 1),
+                  curve: Curves.fastOutSlowIn);
             },
             // ignore: avoid_unnecessary_containers
             child: Container(
