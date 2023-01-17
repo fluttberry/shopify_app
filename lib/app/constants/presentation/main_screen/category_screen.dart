@@ -1,14 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:shopify_app/app/categories/accessories_category.dart';
+import 'package:shopify_app/app/categories/bags_category.dart';
+import 'package:shopify_app/app/categories/beauty_category.dart';
+import 'package:shopify_app/app/categories/electronics_category.dart';
+import 'package:shopify_app/app/categories/home_and_garden.dart';
+import 'package:shopify_app/app/categories/kids_category.dart';
 import 'package:shopify_app/app/categories/men_category.dart';
+import 'package:shopify_app/app/categories/shoes_category.dart';
 import 'package:shopify_app/app/categories/women_category.dart';
 import 'package:shopify_app/app/constants/colors/app_colors.dart';
-import 'package:shopify_app/app/constants/presentation/main_screen/fake_search_widget.dart';
+import 'package:shopify_app/app/constants/presentation/widgets/fake_search_widget.dart';
 
 List<ItemsData> items = [
   ItemsData(lable: 'men'),
   ItemsData(lable: 'women'),
   ItemsData(lable: 'shoes'),
-  ItemsData(lable: 'bads'),
+  ItemsData(lable: 'bags'),
   ItemsData(lable: 'electronicts'),
   ItemsData(lable: 'accessories'),
   ItemsData(lable: 'home & garden'),
@@ -88,14 +95,13 @@ class _CategoryScreenState extends State<CategoryScreen> {
           children: const [
             MenCategory(),
             WomenCategory(),
-            Center(child: Text('shoes category')),
-            Center(child: Text('bags category')),
-            Center(child: Text('electronics category')),
-            Center(child: Text('accessories category')),
-            Center(child: Text('home & garden category')),
-            Center(child: Text('men category')),
-            Center(child: Text('kids category')),
-            Center(child: Text('beauty category')),
+            ShoesCategory(),
+            BagsCategory(),
+            ElectronicsCategory(),
+            AccessoriesCategory(),
+            HomeAndGarden(),
+            KidsCategory(),
+            BeautyCategory(),
           ]),
     );
   }
@@ -109,8 +115,3 @@ class ItemsData {
     this.isSelected = false,
   });
 }
-
-
-
-
-

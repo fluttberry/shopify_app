@@ -12,7 +12,7 @@ class CategoryHeaderLable extends StatelessWidget {
       padding: const EdgeInsets.only(
         bottom: 30,
         top: 30,
-        right: 150,
+        right: 115,
       ),
       child: Text(
         headerLable,

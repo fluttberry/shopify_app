@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopify_app/app/constants/colors/app_colors.dart';
-import 'package:shopify_app/app/constants/presentation/main_screen/fake_search_widget.dart';
+import 'package:shopify_app/app/constants/presentation/widgets/fake_search_widget.dart';
 
 class HomeSareen extends StatefulWidget {
   const HomeSareen({super.key});

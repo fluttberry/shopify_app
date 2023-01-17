@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopify_app/app/constants/colors/app_colors.dart';
-import 'package:shopify_app/app/constants/presentation/main_screen/category_acreen.dart';
+import 'package:shopify_app/app/constants/presentation/main_screen/category_screen.dart';
 import 'package:shopify_app/app/constants/presentation/main_screen/home_screen.dart';
 
 class CustomerScreen extends StatefulWidget {
