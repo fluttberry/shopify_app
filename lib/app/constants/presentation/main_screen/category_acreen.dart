@@ -110,7 +110,6 @@ class ItemsData {
   });
 }
 
-//https://www.youtube.com/watch?v=Z0uSVCOb_JQ 44-00
 
 
 
