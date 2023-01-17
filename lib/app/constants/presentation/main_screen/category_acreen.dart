@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:shopify_app/app/categories/men_category.dart';
+import 'package:shopify_app/app/categories/women_category.dart';
 import 'package:shopify_app/app/constants/colors/app_colors.dart';
 import 'package:shopify_app/app/constants/presentation/main_screen/fake_search_widget.dart';
 
@@ -84,8 +86,8 @@ class _CategoryScreenState extends State<CategoryScreen> {
           controller: _pageController,
           scrollDirection: Axis.vertical,
           children: const [
-            Center(child: Text('men category')),
-            Center(child: Text('women category')),
+            MenCategory(),
+            WomenCategory(),
             Center(child: Text('shoes category')),
             Center(child: Text('bags category')),
             Center(child: Text('electronics category')),
@@ -108,7 +110,7 @@ class ItemsData {
   });
 }
 
-
+//https://www.youtube.com/watch?v=Z0uSVCOb_JQ 44-00
 
 
 
