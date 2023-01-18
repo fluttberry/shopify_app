@@ -31,6 +31,17 @@ class CategoryScreen extends StatefulWidget {
 }
 
 class _CategoryScreenState extends State<CategoryScreen> {
+  @override
+  void initState() {
+    for (var element in items) {
+      element.isSelected = true;
+    }
+    setState(() {
+      items[0].isSelected = false;
+    });
+    super.initState();
+  }
+
   final _pageController = PageController();
   @override
   Widget build(BuildContext context) {
@@ -91,6 +102,14 @@ class _CategoryScreenState extends State<CategoryScreen> {
       height: size.height * 0.8,
       width: size.width * 0.8,
       child: PageView(
+          onPageChanged: (selectedSideBar) {
+            for (var sideBarIndex in items) {
+              sideBarIndex.isSelected = false;
+            }
+            setState(() {
+              items[selectedSideBar].isSelected = true;
+            });
+          },
           controller: _pageController,
           scrollDirection: Axis.vertical,
           children: const [

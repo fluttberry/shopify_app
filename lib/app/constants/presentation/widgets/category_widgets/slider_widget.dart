@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopify_app/app/constants/colors/app_colors.dart';
 import 'package:shopify_app/app/constants/text_styles/app_text_styles.dart';
+import 'package:shopify_app/app/utilities/categ_list.dart';
 
 class SliderWidget extends StatelessWidget {
   const SliderWidget({
@@ -27,15 +28,19 @@ class SliderWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               // ignore: prefer_const_literals_to_create_immutables
               children: [
-                const Text(
-                  '<<',
-                  style: AppTextStyles.brown16Bold,
-                ),
+                mainSliderText == 'beauty'
+                    ? const Text('')
+                    : const Text(
+                        '<<',
+                        style: AppTextStyles.brown16Bold,
+                      ),
                 Text(mainSliderText.toUpperCase()),
-                const Text(
-                  '>>',
-                  style: AppTextStyles.brown16Bold,
-                ),
+                mainSliderText == 'for men'
+                    ? const Text('')
+                    : const Text(
+                        '>>',
+                        style: AppTextStyles.brown16Bold,
+                      ),
               ],
             ),
           ),
