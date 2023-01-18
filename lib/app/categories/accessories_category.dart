@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopify_app/app/constants/presentation/widgets/category_widgets/category_header_lable.dart';
+import 'package:shopify_app/app/constants/presentation/widgets/category_widgets/slider_widget.dart';
 import 'package:shopify_app/app/utilities/categ_list.dart';
 
 import '../constants/presentation/widgets/category_widgets/sub_category_model.dart';
@@ -32,6 +33,12 @@ class AccessoriesCategory extends StatelessWidget {
               ),
             ],
           ),
+        ),
+        // ignore: prefer_const_constructors
+        Positioned(
+          bottom: 0,
+          right: 0,
+          child: const SliderWidget(mainSliderText: 'accessories'),
         ),
       ],
     );

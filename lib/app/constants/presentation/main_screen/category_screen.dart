@@ -44,6 +44,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
       body: Stack(children: [
         Positioned(bottom: 0, left: 0, child: sideNavigator(size)),
         Positioned(bottom: 0, right: 0, child: categoryView(size)),
+        // const Positioned(bottom: 0, right: 0, child: Text('')),
       ]),
     );
   }
@@ -73,7 +74,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
               height: 100,
               color: items[index].isSelected == true
                   ? AppColors.white
-                  : AppColors.yellow,
+                  : AppColors.yellow.withOpacity(0.5),
               child: Center(
                 child: Text(items[index].lable),
               ),
