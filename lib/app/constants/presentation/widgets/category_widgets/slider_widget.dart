@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopify_app/app/constants/colors/app_colors.dart';
 import 'package:shopify_app/app/constants/text_styles/app_text_styles.dart';
-import 'package:shopify_app/app/utilities/categ_list.dart';
 
 class SliderWidget extends StatelessWidget {
   const SliderWidget({

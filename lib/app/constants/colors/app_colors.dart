@@ -9,4 +9,6 @@ class AppColors {
   static const red = Colors.red;
   static const grey = Colors.grey;
   static const brown = Colors.brown;
+  static const orange = Colors.orange;
+  static const teal = Colors.teal;
 }
