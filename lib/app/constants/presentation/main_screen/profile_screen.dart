@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:shopify_app/app/constants/colors/app_colors.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -13,6 +12,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.grey.shade300,
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
@@ -52,17 +52,90 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   height: 75,
                   width: 350,
                   decoration: BoxDecoration(
-                    color: AppColors.teal,
+                    color: AppColors.white,
                     borderRadius: BorderRadius.circular(50),
                   ),
                   child: Row(
-                    children: const [
-                      Text(
-                        'Cart',
-                        style: TextStyle(
-                          color: AppColors.yellow,
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Container(
+                        decoration: const BoxDecoration(
+                          color: Colors.red,
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(
+                              25,
+                            ),
+                            bottomLeft: Radius.circular(
+                              25,
+                            ),
+                          ),
+                        ),
+                        child: TextButton(
+                          onPressed: () {},
+                          child: const SizedBox(
+                            height: 40,
+                            width: 80,
+                            child: Center(
+                              child: Text(
+                                'Cart',
+                                style: TextStyle(
+                                  color: AppColors.yellow,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        color: AppColors.yellow,
+                        child: TextButton(
+                          onPressed: () {},
+                          child: const SizedBox(
+                            height: 40,
+                            width: 80,
+                            child: Center(
+                              child: Text(
+                                'Orders',
+                                style: TextStyle(
+                                  color: AppColors.brown,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        decoration: const BoxDecoration(
+                          color: AppColors.red,
+                          borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(
+                              25,
+                            ),
+                            bottomRight: Radius.circular(
+                              25,
+                            ),
+                          ),
+                        ),
+                        child: TextButton(
+                          onPressed: () {},
+                          child: const SizedBox(
+                            height: 40,
+                            width: 80,
+                            child: Center(
+                              child: Text(
+                                'Wishlist',
+                                style: TextStyle(
+                                  color: AppColors.yellow,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ),
                         ),
                       ),
                     ],
@@ -76,3 +149,4 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
   }
 }
+//https://www.youtube.com/watch?v=e9gkL0Mk9o0 15-35

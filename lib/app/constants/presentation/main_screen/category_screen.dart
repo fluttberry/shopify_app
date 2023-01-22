@@ -34,10 +34,10 @@ class _CategoryScreenState extends State<CategoryScreen> {
   @override
   void initState() {
     for (var element in items) {
-      element.isSelected = true;
+      element.isSelected = false;
     }
     setState(() {
-      items[0].isSelected = false;
+      items[0].isSelected = true;
     });
     super.initState();
   }
