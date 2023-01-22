@@ -70,6 +70,7 @@ flutter:
     - images/men/
     - images/shoes/
     - images/women/
+    - images/inapp/
   #   
 
   # An image asset can refer to one or more resolution-specific "variants", see
