@@ -17,4 +17,8 @@ class AppTextStyles {
     fontFamily: 'Acme',
     letterSpacing: 1.5,
   );
+
+  static const TextStyle black30Regular = TextStyle(
+    fontSize: 30,
+  );
 }
