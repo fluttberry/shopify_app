@@ -10,4 +10,11 @@ class AppTextStyles {
     fontWeight: FontWeight.bold,
     letterSpacing: 1.5,
   );
+
+  static const TextStyle black28Acme = TextStyle(
+    fontSize: 28,
+    color: AppColors.black,
+    fontFamily: 'Acme',
+    letterSpacing: 1.5,
+  );
 }
