@@ -11,4 +11,5 @@ class AppColors {
   static const brown = Colors.brown;
   static const orange = Colors.orange;
   static const teal = Colors.teal;
+  static const lightblueaccent = Colors.lightBlueAccent;
 }

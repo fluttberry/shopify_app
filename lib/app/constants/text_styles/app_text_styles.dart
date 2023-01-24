@@ -21,4 +21,14 @@ class AppTextStyles {
   static const TextStyle black30Regular = TextStyle(
     fontSize: 30,
   );
+
+  static const TextStyle white18Regular = TextStyle(
+    fontSize: 18,
+  );
+
+  static const TextStyle red20Bold = TextStyle(
+    fontSize: 20,
+    color: AppColors.red,
+    fontWeight: FontWeight.bold,
+  );
 }
