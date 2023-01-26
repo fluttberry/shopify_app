@@ -195,6 +195,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 color: AppColors.grey,
                 padding: const EdgeInsets.symmetric(vertical: 8),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   // ignore: prefer_const_literals_to_create_immutables
                   children: [
                     GooglefacebookLoginWidget(
@@ -255,7 +256,7 @@ class GooglefacebookLoginWidget extends StatelessWidget {
           ),
           Text(
             lable,
-            style: const TextStyle(color: Colors.white38),
+            style: const TextStyle(color: AppColors.white),
           ),
         ],
       ),
