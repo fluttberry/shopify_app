@@ -1,7 +1,9 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:shopify_app/app/constants/colors/app_colors.dart';
 
 import 'package:shopify_app/app/constants/decoration/app_decoration.dart';
+import 'package:shopify_app/app/constants/presentation/widgets/buttons/yellow_button_widget.dart';
 
 const textColors = [
   Colors.yellowAccent,
@@ -67,6 +69,73 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   image: AssetImage('images/inapp/logo.jpg'),
                 ),
               ),
+              DefaultTextStyle(
+                style: const TextStyle(
+                    fontSize: 45,
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.lightblueaccent,
+                    fontFamily: 'Acme'),
+                child: AnimatedTextKit(
+                  repeatForever: true,
+                  animatedTexts: [
+                    RotateAnimatedText('Buy'),
+                    RotateAnimatedText('Shop'),
+                    RotateAnimatedText('Duck Store'),
+                  ],
+                ),
+              ),
+              Container(
+                decoration: const BoxDecoration(
+                  color: Colors.white38,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(50),
+                    bottomLeft: Radius.circular(50),
+                  ),
+                ),
+                child: const Padding(
+                  padding: EdgeInsets.all(12.0),
+                  child: Text(
+                    'Supplier only',
+                    style: TextStyle(
+                      color: AppColors.yellow,
+                      fontSize: 26,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                decoration: const BoxDecoration(
+                  color: Colors.white38,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(50),
+                    bottomLeft: Radius.circular(50),
+                  ),
+                ),
+                // ignore: prefer_const_literals_to_create_immutables
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  // ignore: prefer_const_literals_to_create_immutables
+                  children: [
+                    const SizedBox(
+                      height: 70,
+                      child: Image(
+                        image: AssetImage('images/inapp/logo.jpg'),
+                      ),
+                    ),
+                    YellowButtonWidget(
+                      lable: 'Log In',
+                      onTap: () {},
+                      width: 0.25,
+                    ),
+                    YellowButtonWidget(
+                      lable: 'Sign Up',
+                      onTap: () {},
+                      width: 0.25,
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
@@ -74,4 +143,3 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     );
   }
 }
-//https://www.youtube.com/watch?v=sAX1b-b3dLE 38
