@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:shopify_app/app/constants/colors/app_colors.dart';
@@ -88,7 +86,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 style: const TextStyle(
                     fontSize: 45,
                     fontWeight: FontWeight.bold,
-                    color: AppColors.lightblueaccent,
+                    color: AppColors.lightBlueAccent,
                     fontFamily: 'Acme'),
                 child: AnimatedTextKit(
                   repeatForever: true,
@@ -230,7 +228,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                       child: const Icon(
                         Icons.person,
                         size: 55,
-                        color: AppColors.lightblueaccent,
+                        color: AppColors.lightBlueAccent,
                       ),
                       onPressed: () {},
                     ),

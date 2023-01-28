@@ -37,7 +37,7 @@ class CartScreen extends StatelessWidget {
               height: 50,
             ),
             Material(
-              color: AppColors.lightblueaccent,
+              color: AppColors.lightBlueAccent,
               borderRadius: BorderRadius.circular(25),
               child: MaterialButton(
                 minWidth: MediaQuery.of(context).size.width * 0.6,
