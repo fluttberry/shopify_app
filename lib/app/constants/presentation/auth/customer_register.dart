@@ -93,17 +93,17 @@ class _CustomerRegisterState extends State<CustomerRegister> {
               ),
             ],
           ),
-          TextFormField(
-            decoration: InputDecoration(
-                labeTaxt: 'Full name', hintText: 'Enter your full name'),
-            enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(25),
-              borderSide: const BorderSide(
-                color: AppColors.deepOrangeAccent,
-                width: 2,
-              ),
-            ),
-          ),
+          // TextFormField(
+          //   decoration: InputDecoration(
+          //       labeTaxt: 'Full name', hintText: 'Enter your full name'),
+          //   enabledBorder: OutlineInputBorder(
+          //     borderRadius: BorderRadius.circular(25),
+          //     borderSide: const BorderSide(
+          //       color: AppColors.deepOrangeAccent,
+          //       width: 2,
+          //     ),
+          //   ),
+          // ),
         ],
       ),
     );
