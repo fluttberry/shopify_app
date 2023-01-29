@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopify_app/app/constants/presentation/auth/customer_register.dart';
 import 'package:shopify_app/app/constants/presentation/main_screen/customer_screen.dart';
 import 'package:shopify_app/app/constants/presentation/main_screen/supplier_home_screen.dart';
 import 'package:shopify_app/app/constants/presentation/main_screen/welcome_screen.dart';
@@ -22,6 +23,7 @@ class ShopifyApp extends StatelessWidget {
         '/welcome_screen': (context) => const WelcomeScreen(),
         '/customer_screen': (context) => const CustomerScreen(),
         '/supplier_home_screen': (context) => const SupplierHomeScreen(),
+        '/customer_register': (context) => const CustomerRegister(),
       },
     );
   }
